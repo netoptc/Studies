@@ -1,0 +1,8 @@
+#DOCUMENTAÇÃO: https://angular.io/
+
+#Dictionary
+ANGULAR2: É um framework open source(Git Hub) da google + microsft, 
+
+#Comandosangular cli
+$ ng --version
+$ ng new nomedoprojeto #o nome do projeto não pode ter underline(_) 

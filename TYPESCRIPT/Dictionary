@@ -1,0 +1,8 @@
+#Dictionary
+JavaScript Vanila - JavaScript puro
+TypeScript - É uma linguagem de programção mantida pela Microsoft
+ECMAScript - ES6 - é apenas a última versão da padronização da linguagem JavaScript.
+Transpiler - Tranduz um codigo fonte em outro Ex. Traduzir ES2015 
+
+#Comands
+$ tsc arquive.ts #Compila um projeto em Js Vanila
