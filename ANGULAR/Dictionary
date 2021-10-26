@@ -3,7 +3,9 @@
 #Dictionary
 ANGULAR2: É um framework open source(Git Hub) da google + microsft, 
 DECORATOR(@): É uma anotação para passas informações adicionais para o comilador
- 
+Interpolação: ‘embedar’ expressões dentro de uma área delimitada por {{ .. }}
+Diretivas: São extensões da linguagem HTML, que fornecem a possibilidade de estender/ampliar o comportamento dos elementos HTML
+app.module.ts: modulo raiz da aplicação
 
 
 #Comandos
@@ -12,8 +14,14 @@ $ ng --version #versão do angular cli
 $ ng new nomde_projeto #Criando um novo projeto
 $ ng serve #constroi o projeto para o browser
 $ ng g c nomecomponete #gera um componente 
+$ ng g m nomemoudlo #gerar um novo modulo
+
+
+#Diretivas
+*ngFor="let curso of cursos"
+
 
 #Boas praticas
 *Pastas com nomes minusculos e palavras separadas por '-'
 *Nome de class sempre com a primeira letra maiscula
-
+*Somente usar templates inline se o codigo HTML tiver menos de 3 linhas 

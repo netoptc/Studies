@@ -4,11 +4,10 @@ TypeScript - É uma linguagem de programção mantida pela Microsoft
 ECMAScript - ES6 - é apenas a última versão da padronização da linguagem JavaScript.
 Transpiler - Tranduz um codigo fonte em outro Ex. Traduzir ES2015 
 
-#Tipagem de variavel
-nomeVariavel: string; tipo string
-nomeVariavel: number; tipo numero
-nomeVariavel: any; string ou numero
-nomeVariavel: string[] = ['joao', 'pedro', felipe]; Array de strings
+
+#Tiagem da variaveis
+nomeVariavel: string; #aceita apenas strings
+nomeVariavel: numeber ;
 
 
 #Comands

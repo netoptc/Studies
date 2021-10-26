@@ -1,0 +1,6 @@
+#Dictionary
+
+#Comands
+$ git add . #adiciona todos os arquivos novos e alterados ao Git
+$ git commit -m 'Firist Commit' #Registrar as alterações no repositório
+$ git push -u origin main # Envia as modificações ao diretorio main
