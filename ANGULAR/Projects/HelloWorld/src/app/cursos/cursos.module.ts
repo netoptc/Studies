@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 
 import { CursosComponent } from './cursos.component';
 import { CursosDetalhesComponent } from './cursos-detalhes/cursos-detalhes.component';
+import { ProviderAst } from '@angular/compiler';
+import { CursosService } from './cursos.service';
 
 @NgModule({
   declarations: [
@@ -16,6 +18,5 @@ import { CursosDetalhesComponent } from './cursos-detalhes/cursos-detalhes.compo
     CursosComponent,
     CursosDetalhesComponent
   ]
- 
 })
 export class CursosModule { }

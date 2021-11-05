@@ -1,0 +1,107 @@
+<section>
+
+    <article>
+        <h4>Intepolation - Interpolação</h4>
+        <p>String renderizada com interpolação: {{ url }}</p>
+        <p>Expressoes matematicas interpolação - {{ 1 + 1 }}</p>
+        <p>Expressoes matematicas com function na interpolação - {{ 1 + 1 + getValue() }}</p>
+        <p>Expressoes logicas na interpolação - {{ getBoolean && true}}</p>
+    </article>
+    <br><br>
+
+    <article>
+        <h4>Property Binding</h4>
+        <img src="{{ urlImage }}"/>
+        <img [src]="urlImage"/>
+    </article>
+    <br><br>
+    
+    <article>
+        <h4> Class Binding e style Binding</h4>
+        <div>
+            <!--Crinado uma avriavel local(#classe) e escutando e armazendando o valor quando for alterado com o evento change-->
+            Selecione uma classe:
+            <select #myclasse (change)="0">
+                <option value="alert-primary">alert-primary</option>
+                <option value="alert-secondary">alert-secondary</option>
+                <option value="alert-success">alert-success</option>
+            </select><br><br>
+            <h5>Class Binding</h5>
+            <!--Estou verificando se o valor da  minha class é igual ao valo selecionado no select-->
+            <div class="alert" role="alert" [class.alert-primary]= "myclasse.value == 'alert-primary'">
+                This is a primary alert—check it out!
+            </div>
+            <div class="alert" role="alert" [class.alert-secondary] = "myclasse.value == 'alert-secondary'">
+                This is a secondary alert—check it out!
+            </div>
+            <div class="alert" role="alert" [class.alert-success] = "myclasse.value == 'alert-success'">
+                This is a success alert—check it out!
+            </div>
+
+            interpolação dentro de class
+            <div class="alert {{ myclasse.value }}" role="alert">
+                Alert selecionado
+            </div>
+
+            <h5>Style Binding</h5>
+            <div class="alert alert-success" role="alert" [style.display] = "myclasse.value == 'alert-success' ? 'block' : 'none '">
+                This is a success alert—check it out!
+            </div>
+        </div>
+    </article><br><br>
+
+    <article>
+        <h4>Event Binding</h4>
+        <button class="btn btn-primary" (click) = "myFunctiOnClick()">Me click!</button><br>
+        <input type="text" 
+            (keyup)="myFunctinValorAtual($event)"
+            (keyup.enter)="myFunctinValorSalvo($event)"
+            (blur)="myFunctinValorSalvo($event)"/>
+        <br>
+        <p>Valor atual: {{ valorAtual }}</p>
+        <p>Valor salvo: {{ valorSalvo }}</p>
+        <br>
+        <span 
+            [class.myCssCustom] = "mouseOver"  
+            (mouseover) = "onMouseOver()"
+            (mouseout) = "onMouseOver()"
+            >passe o mouse sobre mim
+        </span>
+    </article><br><br>
+    
+
+
+    <article>
+        <h4>Two way data Binding</h4>
+        <div>
+            
+            <input type="text" 
+                [value]="nome"
+                (input) = "nome = myFunctionGetValueElemet($event)"
+            />
+            &nbsp;
+            <input type="text" [(ngModel)]="nome">
+
+            <p>{{nome}}</p>
+                
+        </div>
+        <div>
+            
+            <input type="text" [(ngModel)]="pessoa.nome">
+            &nbsp;
+            <input type="text" [(ngModel)]="pessoa.idade">
+            <p>Meu nome é {{ pessoa.nome }}, e tenho {{ pessoa.idade }} anos</p>
+                           
+        </div>
+
+
+    </article>
+
+
+    <article>
+        <h4>Imput/Output Properties</h4>
+        <app-curso nome="Neto" precoCurso="R$150.00"></app-curso>
+    </article>
+
+
+</section>  

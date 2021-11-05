@@ -5,6 +5,7 @@ ECMAScript - ES6 - é apenas a última versão da padronização da linguagem Ja
 Transpiler - Tranduz um codigo fonte em outro Ex. Traduzir ES2015 
 
 #Tipagem de variavel
+string, number, boolena, any
 nomeVariavel: string; tipo string
 nomeVariavel: number; tipo numero
 nomeVariavel: any; string ou numero

@@ -6,7 +6,8 @@ DECORATOR(@): É uma anotação para passas informações adicionais para o comi
 Interpolação: ‘embedar’ expressões dentro de uma área delimitada por {{ .. }}
 Diretivas: São extensões da linguagem HTML, que fornecem a possibilidade de estender/ampliar o comportamento dos elementos HTML
 app.module.ts: modulo raiz da aplicação
-
+Data Binding(Ligação de dados): associar informações do componente ao template(HTML) e vice versa (Interpolação e eventos(Click no botão))
+two way Data Binding: Atualização tanto do template quanto do componente
 
 #Comandos
 *Angular Cli*
@@ -15,13 +16,18 @@ $ ng new nomde_projeto #Criando um novo projeto
 $ ng serve #constroi o projeto para o browser
 $ ng g c nomecomponete #gera um componente 
 $ ng g m nomemoudlo #gerar um novo modulo
-
+$ ng g s nomedoservico #gerar um novo servico
 
 #Diretivas
 *ngFor="let curso of cursos"
 
 
+#Decorator
+@Input: Transformar uma variavel em uma propriedade para ser usada no template 
+
 #Boas praticas
 *Pastas com nomes minusculos e palavras separadas por '-'
 *Nome de class sempre com a primeira letra maiscula
 *Somente usar templates inline se o codigo HTML tiver menos de 3 linhas 
+*Primeir import do Angular depois os meu imports
+ 
