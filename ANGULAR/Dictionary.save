@@ -1,4 +1,3 @@
-
 #DOCUMENTAÇÃO: https://angular.io/
 
 #Dictionary
@@ -37,10 +36,9 @@ $ ng build --prod #Gera um build para a produção, todos os arquivos já estao 
 
 
 #Diretivas
-*ngFor: Cria uma expressão for. Ex.:  <li *ngFor="let curso of cursos"let curso of cursos">
-*ngIf: Cria uma expressao If. Ex.: <div *ngIf="cursos.length > 0 ">Lista de cursos:</div>
-*ngSwitch: Cria uma expressao switch. Ex.: <div class="container" [ngSwitch]="abaAtiva">  <p *ngSwitchCase="'Mapa'"> Modo Mapa ativo</p> <p *ngSwitchCase="'Lista'"> Modo Lista ativo</p>
-*ngClass: Usado para moder alterar class de uma elemento
+*ngFor: Criar um loop. Ex: *ngFor="let curso of cursos","let curso of cursos"
+*ngIf: Cria uma condição. Ex: *ngIf("Cursos.length > 0")
+*ngSwitch: Cria um expresão switch.
 
 
 #Decorator

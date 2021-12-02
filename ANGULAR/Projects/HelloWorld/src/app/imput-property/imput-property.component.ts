@@ -7,8 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class ImputPropertyComponent implements OnInit {
 
-  /*Criando um propriedade para poder ser usado no template*/
-
+  /*Criando uma propriedade para poder ser usado no template, usamos o decorator Input para poder 'transformar' uma variavel em propriedade*/
   @Input('nome') nomeCurso: string = '';
   @Input() precoCurso: string = '';
 

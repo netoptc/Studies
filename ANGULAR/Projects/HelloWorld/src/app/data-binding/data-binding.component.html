@@ -69,7 +69,10 @@
         </span>
     </article><br><br>
     
-
+    <article>
+        <h4>Criando um Event Binding</h4>
+        
+    </article><br><br>
 
     <article>
         <h4>Two way data Binding</h4>
@@ -101,6 +104,15 @@
     <article>
         <h4>Imput/Output Properties</h4>
         <app-curso nome="Neto" precoCurso="R$150.00"></app-curso>
+        <contador (mudouValor) = "onMudouValor($event)"></contador>
+    </article>
+    
+    <article>
+        <h4>Ciclo de vida do compontes</h4>
+        <p>Eventos que por padrão o compontes disparam quando são criados/alterados/destruidos...</p>
+        <app-ciclo [valorInicial] = "valorCiclo" *ngIf="!valorDeletado"></app-ciclo>
+        <button (click)="mudarValor()">Mudar Valor</button>
+        <button (click)="deletarValor()">Deletar</button>
     </article>
 
 

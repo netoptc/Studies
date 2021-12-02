@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
+
 
 @Component({
   selector: 'app-data-binding',
@@ -16,7 +17,9 @@ export class DataBindingComponent implements OnInit {
   valorSalvo: string = ''; 
   mouseOver: boolean = false;
   nome: string = 'João Queiroz';
-  
+  valorCiclo = 10;
+  valorDeletado: boolean = false;
+
   //Criando uma objeto
   pessoa: any = {
     nome: "Def",
@@ -45,6 +48,18 @@ export class DataBindingComponent implements OnInit {
 
   onMouseOver(){
     this.mouseOver = !this.mouseOver //Estou invertado o valor da variavel mouseOver, então se for True passa a ser false
+  }
+
+  onMudouValor(evento: any){
+    console.log(evento);
+  }
+
+  mudarValor(){
+    this.valorCiclo++;
+  }
+
+  deletarValor(){
+    this.valorDeletado = true;
   }
 
   ngOnInit(): void {

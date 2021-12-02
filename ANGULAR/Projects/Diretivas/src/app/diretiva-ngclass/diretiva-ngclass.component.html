@@ -1,0 +1,22 @@
+<p>----Com property bind----</p>
+
+<i class="bi"
+    [class.bi-heart]="!activeFavoriteIcon"
+    [class.bi-heart-fill] = "activeFavoriteIcon"
+    (click)="onClick()"
+    >
+</i>
+
+<p>----Com ngClass----</p>
+
+<i class="bi"
+    [ngClass]="{
+        'bi-heart': !activeFavoriteIcon,
+        'bi-heart-fill': activeFavoriteIcon
+    }"
+    (click)="onClick()"
+    >
+</i>
+
+
+

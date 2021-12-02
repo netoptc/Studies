@@ -1,0 +1,13 @@
+
+<div *ngIf="cursos.length > 0 ">Lista de cursos:</div>
+<div *ngIf="cursos.length == 0 ">Não Existe cursos</div>
+<br>
+
+<p>---Usando ngIf---<p>
+<p *ngIf="mostrarCursos">(ngIf)Lista de cursos:</p>
+<p>---Usando hidden---</p>
+<p [hidden]="!mostrarCursos">(Hidden)Lista de cursos:</p>
+
+<button (click)="onMonstrarCusos()">Mostrar Cursos</button>
+
+<p>OBS: A diretiva ngIf custa mais perfomance para o DOM, pois ela destroi o elemento se a opecao for falsa, mas em relação a segurança seria um melhor opção do que usar o hidden, devido o usario poder ver as informções de um elemento com o hidden pelo console</p>

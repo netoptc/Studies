@@ -1,4 +1,11 @@
 #INSTAÇÃO 
+
+--------Angular CLI--------
+
 1 - Instalar o node + npm(npm por padrão ja vem junto com o node)
 2 - Instalar o typescript $ sudo npm install -g typescript 
 3 - Instalar o angular/cli $npm install -g @angular/cli
+
+
+--------Bootstrap----------
+ng add @ng-bootstrap/ng-bootstrap

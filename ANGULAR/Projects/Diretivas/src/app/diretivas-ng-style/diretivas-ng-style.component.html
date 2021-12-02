@@ -1,0 +1,26 @@
+<p>Com Propertybind</p>
+
+<button
+    [style.background-color]="activeButton ? 'black' : 'white'"
+    [style.color]="activeButton ? 'white' : 'black'"
+    [style.fontSize]="tamanhoFonte +'px'"
+    (click) = "onClick()"
+>
+Mudar estilo
+</button>
+
+<p>Com ngStyle</p>
+
+<button
+    [ngStyle]="{
+        'background-color': activeButton ? 'black' : 'white',
+        'color': activeButton ? 'white' : 'black',
+        'fontSize': tamanhoFonte + 'px'
+    }"
+    (click)="onClick()"
+>
+Mudar estilo
+</button>
+
+<br>
+<input type="text" [(ngModel)]="tamanhoFonte"/>

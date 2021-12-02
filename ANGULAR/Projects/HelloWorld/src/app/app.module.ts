@@ -9,7 +9,9 @@ import { MeuSegundoComponent } from './meu-segundo/meu-segundo.component';
 import { CursosModule } from './cursos/cursos.module';
 import { DataBindingComponent } from './data-binding/data-binding.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { ImputPropertyComponent } from './imput-property/imput-property.component'; 
+import { ImputPropertyComponent } from './imput-property/imput-property.component';
+import { OutputPropertyComponent } from './output-property/output-property.component';
+import { CicloComponent } from './ciclo/ciclo.component'; 
 
 
 /*META DADOS
@@ -23,7 +25,9 @@ Providders: Serviços que que serão globais da aplicação
     MeuPrimeiroComponent,
     MeuSegundoComponent,
     DataBindingComponent,
-    ImputPropertyComponent
+    ImputPropertyComponent,
+    OutputPropertyComponent,
+    CicloComponent
   ],
   imports: [
     BrowserModule,
