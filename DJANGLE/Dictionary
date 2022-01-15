@@ -1,0 +1,44 @@
+#Dictionary
+djanho: É uma framework
+apps: Em Django apps são componentes isolados que executa alguma funcionalidade
+migrations: Arquivos python que gerenciam a estrutura do banco(criam, deletam tabelas)- dentro delo possui codigo sql
+manager: gerente, todo model tem um object de um manger que conecta no banco e faz as buscas
+views: funcoes do python que recebe um request(solicitação web) e retorna um response(resposta em json/html/texto...)
+dtl: django template language
+tamplate tag: tags html do djano
+
+#Comandos
+
+$ django-admin startproject tutorialdjango: criar um projeto no python
+$ python3 manage.py runserver: executa o webser do python
+$ python3 manage.py sqlmigrate auth 0001: mostra os comandos que serão excutados do app
+$ python3 manage.py showmigrations: mostra todas as migrations que precisamos executar
+$ python3 manage.py makemigrations nome_do_app: cria uma migration
+$ python3 manage.py sqlmigrate nome_do_app 0001: mostra o sql da migration
+$ python3 manage.py migrate nome_do_app: executa a migration
+
+#Instalação
+1 - Instalar Python: $ sudo apt-get install python3
+2 - Instalar o pip: $ sudo apt-get install python3-pip
+3 - Instalar um ambiente virtual: $ sudo apt-get install python3-venv
+4 - Iniciando a vm: $ source nome_da_virtualenv/bin/activate
+5 - Instalar o Django: $ pip install django 
+6 - Abrir o projeto no visual code: $ code .
+
+
+#Estrutura
+.vscode: Contem as configurações do interpretador do vscode
+asgi.py: Configurações para rodar o projeto com asgi
+wsgi.py: Configurações pra rodar o projeto com wsgi
+settings.py: Configuralções do projeto
+urls.py: Padroes de url(rotas)
+models.py: Aonde irei criar a minha tabela no banco
+admin.py: Aonde eu configuro a pagina de administracao do superusuario
+ 
+
+#shell do python
+>>> form app.models import myclass_app #obtem o meu app
+>>> myclass_app.all() # lista todas tuplas
+>>> myclass_app.get(id=1) # Obtem apenas a tupla com idem 1
+>>> myclass_app.title = "valor" # Seta um valor no atributo title
+>>> myclass_app.save() = salva as modificacoes  no banco

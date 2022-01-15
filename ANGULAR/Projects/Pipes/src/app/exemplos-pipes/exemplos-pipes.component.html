@@ -1,0 +1,27 @@
+<p>Nome do livro: {{ livro.titulo | uppercase}}</p>
+<p>Estrelas.....: {{ livro.rating | number: '1.1-2'}}</p> 
+<p>Páginas......: {{ livro.paginas| number}}</p>
+<p>Preco........: {{ livro.preco  | currency: 'BRL':true}}</p>
+<p>Data.........: {{ livro.dataLancamento | date: 'dd-MM-yyyy'}}</p>
+<p>Url..........: {{ livro.url }}</p>
+<br>
+<p>Livro: {{ livro | json}}</p>
+<p>Meu primeiro pipe: {{ livro.titulo | meuPrimeiroPipe }}</p>
+
+<input type="text" [(ngModel)]="filtro"><br>
+<input type="text" #novoValor> <button (click)="addCurso(novoValor.value)">Add Curso</button>
+<br>
+<b>Pipe puro</b>
+<ul *ngFor="let curso of cursos | filtroArray:filtro">
+    <li> {{ curso }} </li>
+</ul> 
+<b>Pipe Impuro</b>
+<ul *ngFor="let curso of cursos | filtroArrayPipeInpuro:filtro">
+    <li> {{ curso }} </li>
+</ul> 
+<b>Maneira correta de fazer filter(Não usasr pipe)</b>
+<ul *ngFor="let curso of getCursoFilter()">
+    <li> {{ curso }} </li>
+</ul> 
+
+<p>Pipe assincrono {{ valorAsync1 | async }}</p>

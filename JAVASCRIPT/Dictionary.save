@@ -1,0 +1,6 @@
+#Comandos
+propt() - receber entrada do usuaio.Ex: var result = prompt('Digite a entrada');
+
+
+#Atributos
+window.location.href ='' 

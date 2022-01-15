@@ -11,7 +11,8 @@ import { DataBindingComponent } from './data-binding/data-binding.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ImputPropertyComponent } from './imput-property/imput-property.component';
 import { OutputPropertyComponent } from './output-property/output-property.component';
-import { CicloComponent } from './ciclo/ciclo.component'; 
+import { CicloComponent } from './ciclo/ciclo.component';
+import { TestComponent } from './test/test.component'; 
 
 
 /*META DADOS
@@ -27,7 +28,8 @@ Providders: Serviços que que serão globais da aplicação
     DataBindingComponent,
     ImputPropertyComponent,
     OutputPropertyComponent,
-    CicloComponent
+    CicloComponent,
+    TestComponent
   ],
   imports: [
     BrowserModule,

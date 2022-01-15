@@ -1,0 +1,36 @@
+#DICIONARIO
+INFLAÇÃO: Perda de compra do dinheiro
+GANHO REAL: Ganho Acima da Inflação
+GANHO NOMINAL: Ganho total sem descontar a inflação
+TESOURO DIRERO - Igual ao CDB so que você empresta dinheiro para o banco
+TITULOS - São titulos de divida no qual um instituição(Banco, Governo) emitem, e você pega esse titulo para ser remunerado por uma taxa 
+ -Tipos de Titulos:
+	*Publico: Titulos emitidos pelo governo, hoje no Brasil tem apenas o tesouro direto. Liquidez d+1(diaria + 1 dia)regate cai no outro dia. Rentabilidade menor
+        *Privado: Titulos não emitidos pelo governo. Liquidez geralmente no dia do vencimento. Rentabilidade maior
+#SIGLAS
+CDB(Certificado de Deposito Bancario) - Quando você empresata dinheiro para o banco
+LCI(Letras de Credito Imbobiliario) - Igual ao CDB so que o dinheiro que você empresta para o banco tem que ser Utilizado exclusivamente no mercado Imboliario, ou seja usado para financimanetos e compras de imoveis 
+IPCA(indice de Preços ao Consumidor Amplo) - Indice medido pelo IBGE que indica	a variação de preções no mercado de varios grupos(Alimentos, transportes, comercio ...) é usado como medidor oficial da inflação
+SELIC(Sistema Especial de Liquidação e de Custodia) - É taxa básica de juros do Brasil, que é utilizada quando um banco empresta dinheiro para o outro quando o mesmo não pode emprestar mais devido a lei que diz que bancos não podem fechar o dia com caixa negativo, como garantia usa os titulo publicos, e essa taxa é o juros dessa opeção 
+
+
+#RENDA FIXA
+ - Você é credor (empresta dinheiro para um instiuição, governo, banco ...)
+ - Independente do resultado, você ira ganhar investimento de acordo com a taxa acordada  
+ - Uso: curot e medio prazo, reserva de emergencia  
+ - Tipos de titulos:
+	*Prefixados: Ele é prefixado em uma taxa, ou seja, você exatamento o quanto vai receber no vencimento. Ex: Titulo X - Rende 10%a.a. Lembre-se é um ganho nominal ou seja, você pode perder dinheiro se a inflação for maior
+	   Momentos que faz sentido comprar:
+		-Em curto e medio prazo pois a inflação em "Previsivel" tende a não laterar muito
+                -Em crises, pois as instituições emitem titulos com taxas maiores
+	*Pós Fixados: Rendem em função de um indexador(SELIC, CDI ...) Ex: Titulo X - Rende 100% Selic. Te da quase que uma garantia de uma valor nominal, porque em geral os indexadores ficam acima da inflação
+	   Momentos que faz sentido comprar:
+		-Longo prazo para contrução de patrimonio
+	*Híbrido: Rendem parte como pos e parte como pre. Ex: Titulo X - IPCA(cobre a inflação) + 4% a.a. O unico que garante ganho Real, mas o risco é menor ou seja o ganho é menor
+	   Momentos que faz sentido comprar:
+		-Longo prazo para para construir e principalmente proteger seu patrimonio da inflação
+#RENDA VARIAVEL
+ - Vocé é socio (possui parte da empresa)
+ - Depende do resultado, se a empresa vai bem você vai bem, se vai mal você vai mal
+ 
+

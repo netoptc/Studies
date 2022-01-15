@@ -1,0 +1,5 @@
+#Dictionary
+self: Instancia do proprio objeto
+
+#Estrutura
+_init_.py: Indica que a pasta deve ser tratada como um modulo python

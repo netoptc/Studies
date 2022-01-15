@@ -1,0 +1,13 @@
+#Dictionary
+React: É uma biblioteca JavaScript de código aberto baseada em componentes
+props: propriedades são parametros que são passados para o componente
+StateFull: Componentes sem mudançã de estados no seus atributos
+StateLess: Componentes com mudança de estados no seus atributos
+
+#Instação
+npm install -g create-react-app
+
+#comandos
+create-react-app nomeprojeto: criar o projeto
+npm start: inicia o projeto
+

@@ -1,0 +1,74 @@
+#Dictionary
+cookies: São valores que você pode salvar no navegador
+sessions: São parecidadas com os cookies, mas quando o navegador é fechado os dados são perdidos	
+Funcoes anonimas: funcoes sem nome: usadas pricipalmente em argumentos de outras funcoes. Ex: array.map(function(){});
+arrow function: funcoes anonimas abreviadas. Ex: array.map(()=>{})
+
+#funcoes
+prompt('texto'): receber entrada do usuaio.Ex: var result = prompt('Digite a entrada');
+document.write('texto'): escreve no documento
+setInterval(my_funtion, tempo): É um temporizador que executa uma função de tempo em tempo(milegundos)
+setTimeout(my_function, tempo): É um temporizador que ira executar uma vez a função quando acabar o tempo(milesegundos)
+clearInterval(time): Para a função setInterval. Ex.: let time = setInterval(my_function, 2000); clearInterval(time);
+string.startsWith("Joa"): Verifica se uma stringa começo com a expressao passada no paramtro
+string.endsWith("o"): Verifica se uma string termina com a expressao passada no parametro
+
+#Atributos
+window.location.href('url'): redireciona a pagina 
+
+#Array
+como criar: array = ['joao', 'pedro']
+imprimir um elemento: lista[0]
+array.indexOf('joao'): obtem o indexe do elemento, retornar -1 se nao encontrar nada 
+array.push(elemento): adiciona um elemento no começo da lista
+array.pop(): remove o ultimo elemento
+array.shift(): remove o primeiro elemento
+array.map(function(item){return item*5;}): executa uma funcao a cada iteracao do array
+array.reduce(function(total, proximo){return total+proximo;}): soma todos os itens do array
+array.includes("valor") verifica se existe esse valor no array, retorna true se existir e false se nao existir
+
+
+#Web Storage
+-Local Storage: Salvar o dado no navegador do usuario(Cookies)
+	localStorage.setItem('key' valor) ou localStorage.key = valor: Salva o um valor
+	localStorage.getItem('key') ou localStorage.key : Obtem o valor
+	localStorage.removeItem('key'): remove o valor salvo
+
+-Session Storage: Salva os dados temporariamento(Senssion)
+	sessionStorage.setItem('key' valor) ou sessionStorage.key = valor: Salva o valor
+        sessionStorage.getItem('key') ou sessionStorage.key : Obtem o valor
+        sessionStorage.removeItem('key'): remove o valor salvo
+ 
+ 
+#keywords
+typeof: retorna o tipo da variavel. Ex.: if(typeof my_var == 'number') 
+var: tem scopo global
+let: tem scopo local
+const: constatnte, nao deixa alterar o valor
+
+#concatenar string
+-1º forma
+	let nome ='joao';
+	let sobrenome = 'queiroz';
+	let pessoa = 'Meu nome e: ' + nome + ' ' + sobrenome;
+
+-2º forma 
+	let nome = 'joao';
+	let sobrenome = 'queiroz';
+	let pessoa = `Meu nome e: ${nome} ${sobrenome}`;
+
+#operadores
+Spread: Usado para concatenar arrays, objetos
+	Ex1.:
+		let array1 = [1,2,3];
+		let array2 = [...arrya1,4,5,6];
+	Ex2.:
+		let pessoa {nome: "joao", sobreno:"queiroz"}
+		let funcionario {...pessoa, cargo: "progamador"}
+
+Rest: Usado para receber varios valores como paramentros 
+	Ex.:
+		function minhalista(...listaValores){console.log(lista)}
+		minhalista("1","2","joao");
+
+

@@ -1,3 +1,13 @@
 IDE - interface de desenvolvimento - VisualStudio, Atom, Sublime
 snippets - Blocos de codigos utilizados para agilizar o desenvolvimento
 pre-processador - São programas que permite gerar um arquivo css com um sintaxe unica
+injeção de dependecia - Passar instaciar classe A dentro dela mesma e passar essa referencia para uma classe B para que eu possa utilizar os metodos da classe A sem ter que instaciar ela na classe B
+Broadcasting - Transferencia de mensagem para todos os receptores simultanimante 
+Refatorar - Refazer o codigo
+Dados mocados - dados criados para teste direto no codigo
+case-sensitive - Diferencia maiuscula de minuscula
+Key word - palavras usadas pela linguagem. Ex.:  'int', 'let', 'var', 'for'
+MVC(Model View Controler) - É uma arquitetura de software. O Model é responsavel por conter as funções que obtem os dados dos dados e fazem a parte logica. O controller é reponsavel por intermediar as solicitações que a View faz ao Model, que por sua vez, é responsavel por exibir o conteudo na tela
+SPA(Single Page Aplications) - Aplicativos de pagina unica, nesse o back-end não renderiza o conteudo, apenas envia os dados via JSON/XML para o front monte a pagina. E o js que é o responsavel por renderezar esses dados na tela. Isso separa totalmente o back-end do front, pois ficam focados apenas na suas atividades
+npm - Gerenciador de pacotes do NodeJs  
+Node.js - È um ambiente de execuçao de codigo JS server-side, ou seja executa codigo js do lado do servidor e nao no navegador
