@@ -1,21 +1,20 @@
 #Dictionary
-Git: É um sistema de controle de versão
-GitHub é uma plataforma para armezar o codigo versionado
-Merge: Unir codigos selecionando qual quadigo sera aprovado
-commit: versões do codigo
+Git: Sistema para controle de versionamento
+GttHub: Plataforma para armazenar codigo versionado
+commit: versão do codigo
+merge: unir dois codigos disitnho escolhendo qual versão ira permanecer 
+README.me: São instruções para inidcar para as pessoas como usar o diretorio
 
 #Comands
-$ git init: inicialia o controle de versionametno
-$ git status: vverifica quais arquivos ainda não estão no controle 
+$ git init # Inicializa o controle de versionamento
+$ git add "nome-arquivo.txt" # adiciona um arquivo ao controle de versão
 $ git add . #adiciona todos os arquivos novos e alterados ao Git
-$ git commit -m 'Firist Commit' #Registrar as alterações no repositório
+$ git commit -m 'Firist Commit' #Cria a uma versão do codigo
 $ git push -u origin main # Envia as modificações ao diretorio main
-$ git push -u origin master
 
 
-#Instalação
+$ git remote add origin  https://github.com/nome/repositorio# defini para o codigo sera enviado
 
-
-#Erros
-No commit ye: nenhum commmit foi feito
-Untracked files: Arquivos não adicionados no controle de versao
+#Messages
+No commit yet: nenhum commmit feito ainda 
+Untracked file: arquivos fora do controle de versionamento
