@@ -16,17 +16,16 @@ $ git push -u origin main # Envia as modificações ao diretorio main
 
 $ git status #Mostra o status do arquivos no controle de versionamento
 $ git reflog #Mostra as versões
-<<<<<<< HEAD
+
 $ git reset --hard 720ec00 #Volta a versão anterior
 $ git remote add origin  https://github.com/nome/repositorio #Defini para o codigo sera enviado
 $ git branch #Mostra todas as branch disponiveis
 $ git branch nome-branch #Cria uma nova branch
 $ git checkout nome-branch #Seleciona uma branch
-=======
-
+$ git branch -d nome-branch #Remove uma branch localmente
+$ git push origin --delete nome-branch #Remove uma branch remotamente
 $ git remote add origin #https://github.com/nome/repositorio# defini para o codigo sera enviado
-
->>>>>>> bef9b46657fd8b30e741d443d4ab05846d311447
+$ git merge --abort #aborta um merge mal sucedido
 
 #Messages
 No commit yet: nenhum commmit feito ainda 
