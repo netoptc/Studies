@@ -2,8 +2,10 @@
 Git: Sistema para controle de versionamento
 GttHub: Plataforma para armazenar codigo versionado
 commit: versão do codigo
-merge: unir dois codigos disitnho escolhendo qual versão ira permanecer 
+merge: unir dois codigos distintos escolhendo qual versão ira permanecer 
+branch: São ramificões do codigo onde a branch principal contem o codigo mais estavel
 README.me: São instruções para inidcar para as pessoas como usar o diretorio
+
 
 #Comands
 $ git init # Inicializa o controle de versionamento
@@ -12,8 +14,13 @@ $ git add . #adiciona todos os arquivos novos e alterados ao Git
 $ git commit -m 'Firist Commit' #Cria a uma versão do codigo
 $ git push -u origin main # Envia as modificações ao diretorio main
 
-
-$ git remote add origin  https://github.com/nome/repositorio# defini para o codigo sera enviado
+$ git status #Mostra o status do arquivos no controle de versionamento
+$ git reflog #Mostra as versões
+$ git reset --hard 720ec00 #Volta a versão anterior
+$ git remote add origin  https://github.com/nome/repositorio #Defini para o codigo sera enviado
+$ git branch #Mostra todas as branch disponiveis
+$ git branch nome-branch #Cria uma nova branch
+$ git checkout nome-branch #Seleciona uma branch
 
 #Messages
 No commit yet: nenhum commmit feito ainda 
