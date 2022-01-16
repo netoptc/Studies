@@ -19,6 +19,7 @@ $ git push -u origin main # Envia as modificações ao diretorio main
 $ git status #Mostra o status do arquivos no controle de versionamento
 $ git reflog #Mostra as versões
 
+$ git pull #puxa o codigo mais atual
 $ git reset --hard 720ec00 #Volta a versão anterior
 $ git remote add origin  https://github.com/nome/repositorio #Defini para o codigo sera enviado
 $ git branch #Mostra todas as branch disponiveis
