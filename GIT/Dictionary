@@ -25,9 +25,8 @@ $ git checkout nome-branch #Seleciona uma branch
 $ git branch -d nome-branch #Remove uma branch localmente
 $ git push origin --delete nome-branch #Remove uma branch remotamente
 $ git remote add origin #https://github.com/nome/repositorio# defini para o codigo sera enviado
-
+$ git merge --abort #aborta um merge mal sucedido
 
 #Messages
 No commit yet: nenhum commmit feito ainda 
 Untracked file: arquivos fora do controle de versionamento
-
