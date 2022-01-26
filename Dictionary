@@ -10,4 +10,7 @@ Key word - palavras usadas pela linguagem. Ex.:  'int', 'let', 'var', 'for'
 MVC(Model View Controler) - É uma arquitetura de software. O Model é responsavel por conter as funções que obtem os dados dos dados e fazem a parte logica. O controller é reponsavel por intermediar as solicitações que a View faz ao Model, que por sua vez, é responsavel por exibir o conteudo na tela
 SPA(Single Page Aplications) - Aplicativos de pagina unica, nesse o back-end não renderiza o conteudo, apenas envia os dados via JSON/XML para o front monte a pagina. E o js que é o responsavel por renderezar esses dados na tela. Isso separa totalmente o back-end do front, pois ficam focados apenas na suas atividades
 npm - Gerenciador de pacotes do NodeJs  
+yarn - Gerenciador de pacortes do NodeJs
+Deploy - fazer a implementação da aplicação
 Node.js - È um ambiente de execuçao de codigo JS server-side, ou seja executa codigo js do lado do servidor e nao no navegador
+Escalabel - Um software é escalavel quando pode expandir sua capacidade de uso sem aumentar drasticamente os recursos

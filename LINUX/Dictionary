@@ -1,8 +1,12 @@
 #COMANDOS NO LINUX
 $ curl: É um utilitario do linux que vai fazer requisições de rede 
 $ ls: Exibe oque tem dentro de um diretorio
-$ mkdir: Cria um diretorio 
-$ rmdir: Remove um diretorio
+$ mkdir nome-pasta #Cria um diretorio 
+$ rmdir nome-pasta #Remove um diretorio
+$ touch nome-arquivo.txt #Cria um arquivo
+$ chmod 777 nome-diretorio #Altera as permições de um diretorio
+$ chmod -R 777 nome-diretorio #Altera as permições de um diretorio e suas subpastas
+$ sudo -i -u nomeusuario #Altera de usuario
 
 #ATALHOS
 CTRL + L - Limpa o terminal

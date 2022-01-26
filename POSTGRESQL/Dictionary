@@ -1,0 +1,51 @@
+#Dictionary
+Roles(Usuarios): São as regras de acesso ao postgress, por padrao toda role é vinculado a algum usuario do sistema linux, tambem por padrao o postgre cria um usuario chamado postgres
+
+
+#Comandos
+$ sudo -i -u postgres #Troca para o usuario postgres
+$ psql #Acessa o prompt do banco, por padrao ele tenta encontrar um banco com o mesmo nome da role(usuario) 
+$ psql -d nomebanco # acessa o prompt de banco com nome diferente da role
+$ sudo -u postgres psql #Acesa o prompt do postgre com sudo direto
+$ sudo -u postgres createuser --interactive #Cria um novo usuario(role), por padrao toda role tera que ter o banco com o mesmo nome 
+$ sudo -u ṕostgres createdb nomedb #Crian um banco de dados 
+$ psql -d nomebanco # loga em um banco diferente
+
+
+#Install 
+$ sudo apt install postgresql postgresql-contrib
+
+
+#Comandos no prompt
+\q #Sair do prompt]]
+\conninfo #Retorna o banco e o usario atual
+\dt #Exibe as tabelas criadas
+
+
+#Criando tabelas
+CREATE TABLE nometabela(
+	equip_id serial PRIMARY KEY, #tipo serial é um número inteiro de incremento automático.
+	type varchar (50) NOT NULL,
+	color varchar (25) NOT NULL,
+	location varchar(25) check (location in ('north', 'south', 'west', 'east', 'northeast', 'southeast', 'southwest', 'northwest')), #check delimita as opções possiveis de entrada
+	install_date date #tipo date é data
+); 
+
+#Inserindo Valores
+INSERT INTO nometabela (type, color, location, install_date) VALUES ('slide', 'blue', 'south', '2017-04-28');
+
+#Buscando Valores
+SELECT * FROM nometabela;
+
+#Deletando Valores
+DELETE FROM nometabela WHERE type = 'slide';
+
+#Inserindo nova coluna
+ALTER TABLE nometabela ADD nomecoluna varchar(20);
+
+#Deletando coluna
+ALTER TABLE nometabela DROP nomecoluna;
+
+#Atualizando daods
+UPDATE nometabela SET coluna = 'valor' WHERE equip_id = 1;
+

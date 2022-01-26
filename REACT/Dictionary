@@ -5,9 +5,9 @@ StateFull: Componentes sem mudançã de estados no seus atributos
 StateLess: Componentes com mudança de estados no seus atributos
 
 #Instação
-npm install -g create-react-app
+$ npm install -g create-react-app
 
 #comandos
-create-react-app nomeprojeto: criar o projeto
-npm start: inicia o projeto
-
+$ create-react-app nomeprojeto# criar o projeto
+$ npm start# inicia o projeto
+$ yarn ou yarn install# installa todas as dependenciad de um projeto 

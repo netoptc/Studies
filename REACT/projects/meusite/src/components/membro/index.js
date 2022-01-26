@@ -26,6 +26,7 @@ class Membro extends Component{
         //operador Ternario
         return(
             <div>
+                <h2>Listas</h2>
                 {this.state.auth ? 
                     <div>
                         <p>Bem-vindo(a) {this.state.nome}</p>
