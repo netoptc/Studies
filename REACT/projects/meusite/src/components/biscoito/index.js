@@ -23,7 +23,7 @@ class Biscoito  extends Component{
         return(
             <div className='container' >
                 <h2>Biscoito</h2>
-                <img className='imagem' src={require('./assets/img/biscoito.png')}/>
+                <img className='imagem' src={require('./assets/img/biscoito.png')} alt='biscoito'/>
                 <button onClick={this.gerarFrase}>Abrir biscoito</button>
                 <b>{this.state.fraseSortiada}</b>
             </div>

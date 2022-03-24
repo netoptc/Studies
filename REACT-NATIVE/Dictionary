@@ -1,0 +1,22 @@
+#Dictionary
+
+
+
+#Instalação
+1 - instalar o open-djk-8(tem que ser a versão 8): $ apt-get install openjdk-6-x
+2 - instalar as bibliotecas graficas# $ sudo apt-get install gcc-multilib lib32z1 lib32stdc++6
+3 - ir na Home e cofigurar as variaveis de ambiente# $ code .bashrc # No final do arquivor color as seguintes linhas de comando
+	export JAVA_HOME=CAMINHO_ANOTADO_COM_SUA_VERSÃO
+	export ANDROID_HOME=~/Android/Sdk
+	export PATH=$PATH:$ANDROID_HOME/emulator
+	export PATH=$PATH:$ANDROID_HOME/tools
+	export PATH=$PATH:$ANDROID_HOME/tools/bin
+	export PATH=$PATH:$ANDROID_HOME/platform-tools
+	export PATH=$PATH:~/android-studio/bin
+	-Trocar o valor de JAVA_HOME para o caminho do open-sdk
+	-Criar a pasta /Android/Sdk
+4 - baixar o android Studio e extrair em ~/  e depois instalar
+
+#Comandos 
+$ npx react-native start #Starta o projeto 
+$ npx react-native run-android

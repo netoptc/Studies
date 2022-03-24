@@ -1,0 +1,10 @@
+{% if latest_question_list %}
+    <ul>
+    {% for pergunta in latest_question_list %}
+        <!--So é possivel usar a tag url porque foi definido um name nas configuraçõs de url do app-->
+        <li><a href="{% url 'enquetes:detalhe' pergunta.id %}">{{ pergunta.texto_pergunta }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No polls are available.</p>
+{% endif %}

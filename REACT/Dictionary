@@ -3,11 +3,32 @@ React: É uma biblioteca JavaScript de código aberto baseada em componentes
 props: propriedades são parametros que são passados para o componente
 StateFull: Componentes sem mudançã de estados no seus atributos
 StateLess: Componentes com mudança de estados no seus atributos
+Requisição sincrona: O cliente tem que esperar uma requisição terminar para fazer outras requisições, ou seja uma requisição depende do terminio de outro para ser executada 
+Requisição assincrona: Podemos enviar varias requisições em paraleo e elas retornaram a medida que foram ficando pronta
+Context-api: Usado para criar states globais ou seja tudo que estiver dentro de suas tags poderam usar suas states 
 
 #Instação
 $ npm install -g create-react-app
 
+#Instalação Rotas
+$ npm install react-router-dom
+
+#Instação Styled component
+$ npm install --save styled-components
+
+#Instação client netlify
+$ npm install -g netlify-cli
+$ netlify deploy #Cria um deploy
+$ netlify deploy --prod #Cria um deploy para producao
+
+
+
+
 #comandos
 $ create-react-app nomeprojeto# criar o projeto
-$ npm start# inicia o projeto
+$ npm start #inicia o projeto
+$ npm run build #Cria o build do projeto
 $ yarn ou yarn install# installa todas as dependenciad de um projeto 
+
+#Boas praticas
+1 - nomes de componentes com a primeira letra maiuscula

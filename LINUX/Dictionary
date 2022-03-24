@@ -7,6 +7,13 @@ $ touch nome-arquivo.txt #Cria um arquivo
 $ chmod 777 nome-diretorio #Altera as permições de um diretorio
 $ chmod -R 777 nome-diretorio #Altera as permições de um diretorio e suas subpastas
 $ sudo -i -u nomeusuario #Altera de usuario
+$ unzip nome.zip #Descompacta o arquivo
+$ pwd #Mostra o caminho diretorio atual
+$ dpkg -l #Lista os pacotes 
+$ apt-get remove nome-pacote #Remove apenas os binarios do pacotes e deixa suas configurações
+$ apt-get purge nome-pacote #Remove tudo relacionado ao pacote, incluindo arquivos de configuração
+
+
 
 #ATALHOS
 CTRL + L - Limpa o terminal

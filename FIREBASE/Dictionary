@@ -1,0 +1,26 @@
+#Dictionary
+FireBase: Plataformar da google usado para criar aplicações web e mobile
+Firestore: Banco de dados do FireBase, é NoSql(Não relacionado)
+
+
+
+
+
+
+
+#Firestore
+-posts(collection)
+
+--post1 (doc)
+---Titulo: Aprendendo C++
+---Author: Netoptc
+---Conteudo: lorem ipyson
+
+--post2 (doc)
+---Titulo: Aprendendo C++
+---Author: Netoptc
+---Conteudo: lorem ipyson
+
+
+Collection: como se fosse as tabelas 
+doc: serias as tuplas

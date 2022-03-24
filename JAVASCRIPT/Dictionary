@@ -24,6 +24,7 @@ array.push(elemento): adiciona um elemento no começo da lista
 array.pop(): remove o ultimo elemento
 array.shift(): remove o primeiro elemento
 array.map(function(item){return item*5;}): executa uma funcao a cada iteracao do array
+array.filter((item)=>{return item.id =!1} # Executa uma funcao e retorna o array menos o item que nao atende a condição
 array.reduce(function(total, proximo){return total+proximo;}): soma todos os itens do array
 array.includes("valor") verifica se existe esse valor no array, retorna true se existir e false se nao existir
 

@@ -1,5 +1,39 @@
 #Dictionary
+python: É uma linguagem de alto nivel, interpretada
 self: Instancia do proprio objeto
+fatiamento: dividir a string em substrings
+__str__: É executado toda vez que o objeto é imprimido
 
 #Estrutura
 _init_.py: Indica que a pasta deve ser tratada como um modulo python
+
+
+
+
+#sintaxe
+nome = ['joao','pedro','rafael'] # cria uma array
+def namefunction(arg) #Cria uma função
+
+#Operadores 
+/ - divisão retornar float
+// - divisao retorna int
+% - divisao retorna resto
+** - pontencia Ex.: 5 **2 = 25
+
+#Comandos
+$ python3 app.py #Executa um arquivo python 
+$ python3 #Abre o interpretador em modo interativo(>>>)
+$ python3 -c "comando" #Executa algum comando
+
+#String 
+nome  = 'python' + 'hellowordl' #concatenar strings
+nome[0] #Retornar o primeiro elemento
+nome[-1] #Retornar o ulitmo elemento
+nome[0:2] #Retornar do caracter 0 ate 2
+nome[:2] #Retorna do caracter 0 ate 2
+nome[2:5] #Retorna do caracter 2 ate 5
+nome[2:] #Retorna do caracter 2 ate o final
+nome.len() #Retorna o tamnaho
+
+#Listas
+lista = [1,2,3] #Crinado lista

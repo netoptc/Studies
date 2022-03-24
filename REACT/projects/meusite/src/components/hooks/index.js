@@ -15,7 +15,7 @@ function Hooks(){
     );
 
     //Funcoina da mesma forma que o didMount - ira executar quando a pagina for montada 
-    useEffect(()=>{console.log('componente montado')}, {})
+    useEffect(()=>{console.log('componente montado')}, [])
 
     
     //É acionado somneto quando ouver uma alteração em tarefas 

@@ -1,6 +1,6 @@
 import React,{Component} from "react";
 
-class Formulario_refatorado extends Component{
+class FormularioRefatorado extends Component{
     constructor(props){
         super(props);
         this.state = {
@@ -56,4 +56,4 @@ class Formulario_refatorado extends Component{
     }
 
 }
-export default Formulario_refatorado;
+export default FormularioRefatorado;

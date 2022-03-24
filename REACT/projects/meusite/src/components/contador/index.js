@@ -1,4 +1,4 @@
-import react,{Component} from "react";
+import {Component} from "react";
 
 
 class Contador extends Component{
@@ -13,14 +13,14 @@ class Contador extends Component{
 
     aumentar(){
         let state = this.state;
-        this.state.contador += 1;
+        state.contador += 1;
         this.setState({state});
     }
 
 
     diminuir(){
         let state = this.state;
-        this.state.contador -= 1;
+        state.contador -= 1;
         this.setState({state});
     }
 

@@ -1,16 +1,16 @@
 #Dictionary
 Roles(Usuarios): São as regras de acesso ao postgress, por padrao toda role é vinculado a algum usuario do sistema linux, tambem por padrao o postgre cria um usuario chamado postgres
 
-
 #Comandos
 $ sudo -i -u postgres #Troca para o usuario postgres
 $ psql #Acessa o prompt do banco, por padrao ele tenta encontrar um banco com o mesmo nome da role(usuario) 
-$ psql -d nomebanco # acessa o prompt de banco com nome diferente da role
-$ sudo -u postgres psql #Acesa o prompt do postgre com sudo direto
-$ sudo -u postgres createuser --interactive #Cria um novo usuario(role), por padrao toda role tera que ter o banco com o mesmo nome 
-$ sudo -u ṕostgres createdb nomedb #Crian um banco de dados 
+$ psql -U nomebanco # acessa o prompt de banco com nome diferente da role
+$ sudo -U postgres psql #Acesa o prompt do postgre com sudo direto
+$ sudo -U postgres createuser --interactive #Cria um novo usuario(role), por padrao toda role tera que ter o banco com o mesmo nome 
+$ sudo -U postgres dropuser nomeuser
+$ sudo -U postgres createdb nomedb #Crian um banco de dados 
 $ psql -d nomebanco # loga em um banco diferente
-
+$ psql -U username -d dbname < filename.sql # =Restaura Banco
 
 #Install 
 $ sudo apt install postgresql postgresql-contrib
@@ -18,8 +18,14 @@ $ sudo apt install postgresql postgresql-contrib
 
 #Comandos no prompt
 \q #Sair do prompt]]
+\c databasename #Conecta a um banco de dados
 \conninfo #Retorna o banco e o usario atual
 \dt #Exibe as tabelas criadas
+\dt schema1_nome. # Exibe todas as tabelas de um schema
+\dg #Exibe a lista de usuario criados 
+\d+ nome_tabela #Mostra as colunas da tabela
+\l #Lista todos os bancos
+DROP DATABASE nome_database #Deleta um banco de dados
 
 
 #Criando tabelas
@@ -31,21 +37,29 @@ CREATE TABLE nometabela(
 	install_date date #tipo date é data
 ); 
 
+#CREATE DATABE
+CREATE DATABASE myDatabase; #cria um banco de dados 
+
+#Altarar senha usuario
+ALTER USER nomedousuario PASSWORD 'senha';
+
 #Inserindo Valores
 INSERT INTO nometabela (type, color, location, install_date) VALUES ('slide', 'blue', 'south', '2017-04-28');
 
-#Buscando Valores
-SELECT * FROM nometabela;
+#SELECT 
+SELECT * FROM nometabela; #Buscar todos os valores de uma tabela
+SELECT schema_name FROM information_schema.schemata; # Buscar todos os schemas 
 
 #Deletando Valores
 DELETE FROM nometabela WHERE type = 'slide';
 
-#Inserindo nova coluna
-ALTER TABLE nometabela ADD nomecoluna varchar(20);
-
-#Deletando coluna
-ALTER TABLE nometabela DROP nomecoluna;
-
-#Atualizando daods
+#Atualizando dados
 UPDATE nometabela SET coluna = 'valor' WHERE equip_id = 1;
 
+#ALTER TABLE
+ALTER TABLE nometabela ADD nomecoluna varchar(20); #Adicionando nova coluna na tablea
+ALTER TABLE nometabela DROP nomecoluna; #Deletando coluna de tabela
+
+
+#DROP
+DROP SCHEMA nomeschema CASCADE; #Remove o schema e todas as tabelas

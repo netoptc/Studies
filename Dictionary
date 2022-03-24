@@ -13,4 +13,8 @@ npm - Gerenciador de pacotes do NodeJs
 yarn - Gerenciador de pacortes do NodeJs
 Deploy - fazer a implementação da aplicação
 Node.js - È um ambiente de execuçao de codigo JS server-side, ou seja executa codigo js do lado do servidor e nao no navegador
-Escalabel - Um software é escalavel quando pode expandir sua capacidade de uso sem aumentar drasticamente os recursos
+Escalavel - Um software é escalavel quando pode expandir sua capacidade de uso sem aumentar drasticamente os recursos
+Linguagem compilada - Linguagem que utiliza um compitalador cuja sua função e traduzir todo o codigo de uma vez so em codigo binario para ser executado pelo cliente. Ex.: C++ 
+Linguagem interpretada - Utiliza de um interpretador que traduz que converte para a binario aos poucos o codigo, oque facilita no debug. Ex.: python
+FireBase - É uma plataforma da google para para criação de aplicativos moveis e web
+Firestore - o banco de dados do Fire Base é no NoSQL(Não relacionado)
