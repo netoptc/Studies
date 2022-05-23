@@ -1,9 +1,8 @@
-#STABLE
-
 #Dictionary
 Git: Sistema para controle de versionamento
-GttHub: Plataforma para armazenar codigo versionado
+GitHub: Plataforma para armazenar codigo versionado
 commit: versão do codigo
+commits atomicos: comitar apenas um trecho do codigo
 merge: unir dois codigos distintos escolhendo qual versão ira permanecer 
 branch: São ramificões do codigo onde a branch principal contem o codigo mais estavel
 Pull request: Fazer uma resquisão para aprovar o seu merge a breanch principal
@@ -32,6 +31,7 @@ $ git push origin --delete nome-branch #Remove uma branch remotamente
 $ git remote add origin #https://github.com/nome/repositorio# defini para o codigo sera enviado
 $ git merge --abort #aborta um merge mal sucedido
 $ touch .gitignore #criando um arquivo .gitignore
+
 #Messages
 No commit yet: nenhum commmit feito ainda 
 Untracked file: arquivos fora do controle de versionamento
